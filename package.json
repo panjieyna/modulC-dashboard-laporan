@@ -1,0 +1,33 @@
+{
+  "name": "ksdas-modul-c-ujicoba",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Prototipe uji coba requirement KSDAS Modul C (Dasbor & Laporan) dengan data contoh",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.9.0",
+    "bootstrap": "^5.3.8",
+    "exceljs": "^4.4.0",
+    "react": "~19.1.1",
+    "react-dom": "~19.1.1",
+    "react-is": "~19.1.1",
+    "react-redux": "^9.2.0",
+    "react-router": "^7.13.0",
+    "recharts": "^2.15.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.0.0",
+    "vite": "~7.3.0",
+    "vitest": "^4.1.12"
+  },
+  "overrides": {
+    "react-is": "$react-is"
+  }
+}

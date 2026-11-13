@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KSDAS · Dasbor & Laporan (uji coba)</title>
+    <script>
+      // Pasang tema sebelum render agar tidak berkedip. Storage bisa diblokir, jadi dibungkus try/catch.
+      (function () {
+        var tema = 'light';
+        try {
+          var simpan = localStorage.getItem('ksdas-tema');
+          if (simpan === 'light' || simpan === 'dark') tema = simpan;
+          else if (window.matchMedia('(prefers-color-scheme: dark)').matches) tema = 'dark';
+        } catch (e) {}
+        document.documentElement.setAttribute('data-bs-theme', tema);
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
